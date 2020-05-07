@@ -4,7 +4,7 @@
    <head>
      <meta charset="utf-8">
      <title>MVC structuur</title>
-     <link rel="stylesheet" href="css/master.css">
+       <link rel="stylesheet" href="<?= WEB_ROOT?>css/master.css">
    </head>
    <body style="">
      <?php
