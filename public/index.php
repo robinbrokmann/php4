@@ -8,11 +8,9 @@
    </head>
    <body style="">
      <?php
-        // code...
-
-        //example
-        $test = new Test();
-        echo $test;
+        if(isset($_GET['route'])){
+            echo $_GET['route'];
+        }
       ?>
    </body>
  </html>
