@@ -11,6 +11,10 @@
         if(isset($_GET['route'])){
             echo $_GET['route'];
         }
+
+     $app = new \mvc\App();
+     echo $app;
+     echo "<br>";
       ?>
    </body>
  </html>
