@@ -4,18 +4,21 @@ namespace mvc;
 class app
 {
     private $view;
+    private $controller;
 
-    public function __construct()
-    {
-        $this ->view = new \views\testview(null , null);
-    }
+ public function __construct() {
+    $this->controller = new \controllers\testcontroller(null);
+    $this->view = new \views\testview($this->controller, null);
+}
 
     public function __toString()
     {
        return $this->view->getHTML();
     }
 
-    // public function __toString(){
+    /* oude code
+
+    public function __toString(){
 //return "this is app";
-//}
+//}*/
 }
