@@ -3,6 +3,23 @@ namespace mvc;
 
 class app
 {
+    private $router;
+
+    public function __construct()
+    {
+        $this->router = new \mvc\Router();
+    }
+
+    public function __toString()
+    {
+        try {
+            return $this->router->getView()->getHTML();
+        }catch (\Exception $e){
+            return $e.getMessage;
+        }
+    }
+
+    /* oude code
     private $view;
     private $controller;
 
@@ -16,7 +33,7 @@ class app
        return $this->view->getHTML();
     }
 
-    /* oude code
+
 
     public function __toString(){
 //return "this is app";
