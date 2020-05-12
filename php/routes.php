@@ -3,15 +3,31 @@ define("DEFAULT_ROUTE", "home");
 
 $routes = array(
     "home" => array(
-        "view" => "homeview",
-        "controller" => "homecontroller",
+        "view" => "HomeView",
+        "controller" => "HomeController",
+        "model" => "HomeModel",
     ),
-    "form" => array(
-        "view" => "formview",
-        "controller" => "formcontroller",
+    "form" =>array(
+        "view" => "FormView",
     ),
-    "test" => array(
-        "view" => "testview",
-        "controller" => "testcontroller",
+    "formresult" =>array(
+        "view" => "FormResultView",
+        "controller" => "FormResultController",
+        "model" => "FormResultModel",
     ),
+    "test" =>array(
+        "view" => "TestView",
+        "controller" => "TestController",
+        "model" => "TestModel",
+    ),
+    "red" => array(
+        "controller" => "RedController",
+    ),
+
+    "blue" => array(
+        "controller" => "BlueController",
+        "view" => "BlueView",
+        "model" => "BlueModel",
+    )
 );
+?>
